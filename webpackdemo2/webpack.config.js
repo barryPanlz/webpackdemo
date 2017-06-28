@@ -15,7 +15,6 @@ module.exports = {
 	        test: /\.less$/,
 	        loader: 'style-loader!css-loader!less-loader'//添加对样式表的处理modules为模块，
 	      },
-	      
 	    ]
 	},
 	devServer: {
