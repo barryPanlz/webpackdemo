@@ -5,3 +5,8 @@
 引入插件可以好多种形式，全局插件可以使用package.json中devDependencies引入即可（插件名称：版本号），
 记得webpack格式（冒号后面加空格，双引号），安装后全局加  var $ = require('jquery') 即可。
 注意：引入就要用，不用就不要引入。
+配置IP和端口：
+webpack.config.js>devServer:{
+port: 8090,//配置端口号
+host: "192.168.100.4"//配置IP
+}
