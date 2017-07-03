@@ -9,13 +9,14 @@
   "devDependencies": {
     "autoprefixer": "^7.1.1",
     "css-loader": "^0.28.4",
+    "html-webpack-plugin": "^2.29.0",
+    "jquery": "^3.2.1",
     "json-loader": "^0.5.4",
     "less": "^2.7.2",
     "less-loader": "^4.0.4",
     "postcss-loader": "^2.0.6",
     "style-loader": "^0.18.2",
-    "webpack-dev-server": "^2.5.0",
-    "jquery": "^3.2.1"
+    "webpack-dev-server": "^2.5.0"
   },
   "scripts": {
     "start": "webpack-dev-server --inline",

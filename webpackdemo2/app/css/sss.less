@@ -10,3 +10,44 @@
         color: blue;
     }
 }
+//参考网址： http://blog.csdn.net/sinat_27169251/article/details/49721751
+//变量1
+@border-color : #b5bcc7; 
+
+ .mythemes tableBorder{ 
+   border : 1px solid @border-color; 
+ }
+//变量2
+.box(@color,@frist,@second,@third,@fouth){
+    -moz-box-shadow:@color @frist @second @third @fouth; /* Firefox */
+    -webkit-box-shadow:@color @frist @second @third @fouth; /* Safari 和 Chrome */
+    box-shadow: @color @frist @second @third @fouth; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+}
+.index{
+    width:100px;
+    height: 80px;
+    background-color:red;
+    .box(gray,1px,1px,1px,1px);
+}
+//变量3
+@width : 20px; 
+ #homeDiv { 
+   @width : 30px; 
+   #centerDiv{ 
+       width : @width;// 此处应该取最近定义的变量 width 的值 30px 
+              } 
+ } 
+ #leftDiv { 
+     width : @width; // 此处应该取最上面定义的变量 width 的值 20px 
+
+ }
+ 
+//变量4（伪类）
+a { 
+ color: red; 
+ text-decoration: none; 
+     &:hover {// 有 & 时解析的是同一个元素或此元素的伪类，没有 & 解析是后代元素
+      color: black; 
+      text-decoration: underline; 
+     } 
+ }
